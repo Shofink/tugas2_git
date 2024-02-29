@@ -1,0 +1,62 @@
+* {
+    /* css universal memungkinkan semua tag yang ada
+    di dalam html berpengaruh dengan css universal */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-image: url('../img/header3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(43, 172, 179);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+}
+
+.navbar a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+width: 25%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+.row::after{
+content: "";
+display: table;
+clear: both;  
+}
+
+.footer{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
